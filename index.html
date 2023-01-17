@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content = "text/html">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "index.css">
+        <link rel = "stylesheet" href = "navbar.css"
+
+
+    </head>
+<body>
+    <div class = "container">
+        <div class = "diap-text">
+            <div class = "text">
+                Dubai Direct Import
+            </div>
+            
+        </div>
+        <!-- Corps de page -->
+        <div class = "navbar">
+            <div class = "nav-logo" ">
+                <img src = "logo.jpg">
+            </div>
+            <div class = "logo-text" style = "color :rgb(11, 231, 11) !important;">
+                Dubai Direct Import
+            </div>
+            <div class = "logo-text">
+                Téléphone : +971 58 595 0874
+            </div>
+            <div class = "logo-text">
+                Email : dubai.direct.import@mail.fr
+            </div>
+            
+            <div class = "nav-btn-container" onclick="window.open('https://www.facebook.com/dubaidirectimport/', '_blank')">
+                <img src = "Images/face.png" style = "height: 50px;">
+                <div class = "btn" style = "margin-left: 20px">
+                    Suivez nos lives
+                </div>
+            </div>
+        </div>
+        
+        <div class = "container-content">
+
+            <div class = "diap_it">
+                <div class = "diap_btn db1" onclick="plusDivs(-1)">
+                    <strong><</strong>
+                </div>
+                <div class = "diap_btn db2" onclick="plusDivs(1)">
+                    <strong>></strong>
+                </div>
+                <div class = "diaporama">
+                    <img class = "diapo_img" src = "Images/7.png" >
+                    <img class = "diapo_img" src = "Images/8.jpg" >
+                    <img class = "diapo_img" src = "Images/4.jpg" >
+                    <img class = "diapo_img" src = "Images/6.jpg" >
+
+                </div>
+                
+                </div>
+            </div>
+            
+
+
+            <!-- Contenu 1 -->
+            <div class = "elt-container">
+                <!-- Contenu 2 -->
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        Les enchères à Dubai
+                    </div>
+                    <div class = "content">
+                        nous pouvons pour vous enchérir sur un véhicule aux enchères cliquez sur le lien ci-dessous choisissez votre véhicule et laissez-nous gérer l'achat jusqu'à votre limite pour que nous fixons ensemble pour cela il faut donner une caution de 3000 € en dépôt qui sera récupérable si le véhicule ne vous ai pas acheté
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        Plus ..
+                    </div>
+                    <div class = "content">
+                        vous rêvez d'un véhicule américain ou un autre modèle sur Dubaï vous ne savez pas comment exporter votre véhicule vers la destination de votre choix confier cette mission à notre expert Cyril Kira expertiser pour vous le véhicule que vous pouvez sélectionner sur les sites d'annonces de Dubaï si dessous 👇🏻
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        <div class = "btn" onclick = "window.open('https://www.dubicars.com', '_blank')">
+                            DubiCars
+                        </div>
+                    </div>
+                    <div class = "content">
+                    Concessionnaire de véhicule à moteur à Dubai, Émirats arabes unis.
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        <div class = "btn" onclick="window.open('https://www.dubizzle.com', '_blank')">
+                            Dubizzle
+                         </div>
+                    </div>
+                    <div class = "content">
+                    Site d'annonces à Dubai
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        <div class = "btn" onclick = "window.open('https://ae.opensooq.com/en', '_blank')">
+                            OpenSooq
+                        </div>
+                    </div>
+                    <div class = "content">
+                    vendeur de pièces détachées de voitures et accessoires
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        <div class = "btn" onclick = "window.open('https://carswitch.com', '_blank')">
+                            CarSwitch
+                        </div>
+                    </div>
+                    <div class = "content">
+                    Site de vente de voitures neuves et occasions.
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        <div class = "btn" onclick = "window.open('https://www.emiratesauction.com/', '_blank')">
+                            EmiratesAuction
+                        </div>
+                    </div>
+                    <div class = "content">
+                    Site d'enchères de véhicules
+                    </div>
+                </div>
+                <div class = "content-elt">
+                    <div class = "content-title">
+                        <div class = "btn" onclick = "window.open('https://www.emiratesauction.com/', '_blank')">
+                            Présentation
+                        </div>
+                    </div>
+                    <div class = "content">
+                    Je suis cyril
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("diapo_img");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";
+      
+    }
+    </script>
