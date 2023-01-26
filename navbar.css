@@ -40,18 +40,15 @@ element::-webkit-scrollbar{
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #000000;
+    justify-content:center!important;
 }
-
-
-
 
 .nav-logo{
     position: absolute;
-
-    height: 200px;
+    height: 10vw;
     margin-top: 14px;
     margin-left: 14px;
-    width: 200px;
+    width: 10vw;
     text-align: center;
     line-height: 40px;
     overflow: hidden;
@@ -68,6 +65,7 @@ element::-webkit-scrollbar{
 
 .text{
     color: rgba(11, 231, 11, 0.5);
+    font-size: 5vw !important;
 }
 
 .nav-btn-container{
@@ -79,11 +77,20 @@ element::-webkit-scrollbar{
 
 .logo-text{
     color: white;
-    line-height: 60px;
-    margin-left: 50px;
+    margin-left: 14px;
+    text-align: center;
+    align-items: center;
     font-size: 20px;
+    line-height: 60px;
     border-right: solid white 2px;
     padding-right: 50px;
+    width: fit-content;
+}
+
+@media screen and (max-width > 768px) {
+    .logo-text{
+        font-size: 3vw !important;
+    }
 }
 
 .btn{
